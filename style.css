@@ -1,0 +1,242 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsla(0, 0%, 81%, 0.938);
+    color: #333;
+    scroll-behavior: smooth; /* Smooth scroll for the entire page */
+}
+
+/* Header Section */
+header {
+    background-color: #4d4c4c;
+    color: #d4d4d4;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #6d6d6d;
+    transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+/* Hero Section */
+#hero {
+    padding: 100px 20px;
+    background-color: #6b6b6b;
+    color: #fff;
+    text-align: center;
+    background-image: url('https://i.pinimg.com/564x/a6/e1/4b/a6e14b30f861eeaf7671ecc9b983e3c0.jpg');
+    background-size: cover;
+    animation: fadeInUp 1s ease-out; /* Fade in effect */
+}
+
+#hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    animation: fadeInUp 1.5s ease-out; /* Fade in effect */
+}
+
+#hero p {
+    font-size: 20px;
+    animation: fadeInUp 2s ease-out; /* Fade in effect */
+}
+
+/* About Section */
+#about {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+#about img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards; /* Fade in animation */
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 2;
+}
+
+/* Skills Section */
+#skills .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#skills .skill {
+    background-color: #6e8fc0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+#skills .skill:hover {
+    transform: scale(1.1); /* Enlarge skill box on hover */
+}
+
+/* Projects Section */
+#projects .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#projects .project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: calc(50% - 20px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.5s; /* Staggered animation for projects */
+}
+
+#projects .project img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#projects .project h3, #projects .project p {
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.75s;
+}
+
+/* Skills Section */
+#skills .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start; /* Align items to the left */
+    margin-left: 20px; /* Add space from the left */
+}
+
+/* Projects Section */
+#projects .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start; /* Align items to the left */
+    margin-left: 20px; /* Add space from the left */
+}
+/* Resume Section */
+#resume {
+    text-align: center;
+    padding: 60px 20px; /* Adjust padding to balance spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#resume h2 {
+    margin-bottom: 20px; /* Space between heading and button */
+    font-size: 32px; /* Adjust the font size for a more balanced look */
+}
+
+#resume .btn {
+    padding: 10px 20px;
+    background-color: #6e8fc0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Add space above the button */
+}
+
+#resume .btn:hover {
+    background-color: #05142b93;
+}
+
+/* Contact Section */
+#contact {
+    color: #c7c7c7;
+    background-color: #575757;
+    text-align: center;
+}
+
+#contact p {
+    font-size: 18px;
+    color: #b6b6b6;
+}
+
+#contact .social-icons a {
+    font-size: 24px;
+    margin: 10px;
+    color: #b3b3b3;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#contact .social-icons a:hover {
+    color: #ffffff;
+    transform: scale(1.1); /* Enlarge icons on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
